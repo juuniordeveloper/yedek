@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/awesome-portfolio-template-dev/css/footer.css" />
+    <link rel="stylesheet" href="/awesome-portfolio-template-dev/css/contact.css" />
+     <link rel="stylesheet" href="/awesome-portfolio-template-dev/css/skills.css" />
+    <link rel="stylesheet" href="/awesome-portfolio-template-dev/css/loader.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/education.css">
+    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/skills.css">
+   
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+   
+  
+</head>
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+    
+    .header {
+      background-color: #081b29;
+      color: #ffffff;
+      padding: 15px;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #33b5e5;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .menu li:hover {
+      background-color: #0099cc;
+    }
+    
+    .aside {
+      background-color: #33b5e5;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .footer {
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+    }
+    
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+    </style>
+    <section class="navsection">
+    <header class="header">
+        <a href="#" class="logo">Yusuf Tunç</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons"> 
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        
+        <nav class="navbar">
+            <a href="#home" style="--i:0" class="active"  >Ana Sayfa</a>
+            <a href="#about" style="--i:1">Hakkımda</a>
+            <a href="#yeteneklerim" style="--i:2">Yeteneklerim</a>
+            <a href="#projects" style="--i:1">Projelerim</a>
+            <a href="#contact" style="--i:4">İletişim</a>
+        </nav>
+    </header>
+    
+</section>
+<canvas id='c'></canvas>
+    <section class="home" >
+        <div class="home-content">
+         
+            <h1>Merhaba ben Yusuf Tunç</h1>
+            <h3>Full Stack Stajyer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Similique, aliquam at sit sint aspernatur, modi aliquid consectetur,
+            repudiandae quas sequi odit rem mollitia dolores ab dolore culpa.</p>
+            <div class="home-sci">
+                          
+              <a href="https://twitter.com/Ysft_d" target="_blank"><i class='bx bxl-twitter' ></i></a>
+              <a href="https://www.linkedin.com/in/yusuf-tun%C3%A7-014951290/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+              <a href="https://www.instagram.com/ysft.d/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+              <a href="https://github.com/juuniordeveloper" target="_blank"><i class='bx bxl-github' ></i></a>
+      
+          </div>
+          
+  
+            <div class="btn-box">
+              <a href="#about">
+              <button>
+                <span>Hakkımda</span>
+              </button>
+            </a>
+            <a href="#contact">
+              <button>
+                <span>İletişim</span>
+              </button>
+            </a>
+             
+            </div>
+        </div>
+       
+      
+
+       
+    </section>
+    <section class="about" id="about">
+        <h1 class="about_heading"> </h1>
+
+        <div class="about-content row">
+            <div class="about-image col-md-4">
+                <img src="image/cvimage.jpg" class="img-fluid" />
+            </div>
+
+            <div class="about-desc col-md-8">
+                <h2 class="about-title">CV</h2>
+                <h4 class="about-subtitle"></h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptatem id ex, ducimus, aliquid accusantium sapiente ut natus
+                     accusamus magni laudantium maiores nisi atque nemo totam!
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                     Voluptatem id ex, ducimus, aliquid accusantium sapiente ut natus
+                      accusamus magni laudantium maiores nisi atque nemo totam!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Voluptatem id ex, ducimus, aliquid accusantium sapiente ut natus
+                       accusamus magni laudantium maiores nisi atque nemo totam!
+                </p>
+              
+            </div>
+        </div>
+    </section>
+   
+    <section class="skills" id="yeteneklerim">
+        <h2 class="skills_heading">Yeteneklerim</h2>
+
+        <div class="skill-content">
+            <div class="skill">
+                <div class="skill-img-container" data-aos="zoom-in">
+                    <object class="slide-right slide-in" data="image/html-5-logo-svgrepo-com.svg" width="90"></object>
+                </div>
+                <h3 class="skill-title"><b>HTML5</b></h3>
+            </div>
+            
+            <div  class="skill"> 
+                <div class="skill-img-container" data-aos="zoom-in">
+                <object class="slide-right slide-in" data="image/c--4 (2).svg " width="80"></object>
+
+                </div>
+                <h3 class="skill-title"><b>C#</b></h3>
+            </div>
+            <div  class="skill"> 
+                <div class="skill-img-container" data-aos="zoom-in">
+                <object class="slide-right slide-in" data="image/c-1.svg" width="80"></object>
+
+                </div>
+                <h3 class="skill-title"><b>C</b></h3>
+            </div>
+            
+
+            <div class="skill">
+                <div class="skill-img-container" data-aos="zoom-in">
+                    <object class="slide-right slide-in" data="image/css3-svgrepo-com.svg" width="80"></object>
+                </div>
+                <h3 class="skill-title"><b>CSS3</b></h3>
+            </div>
+
+            <div class="skill">
+                <div class="skill-img-container" data-aos="zoom-in">
+                    <object class="slide-right slide-in" data="image/icons8-javascript.svg" width="90"></object>
+                </div>
+                <h3 class="skill-title"><b>JAVASCRİPT</b></h3>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="col">
+              <h2 class="titulo">Diller</h2>
+              <ul class="skill">
+                <li><span class="blueline html"></span><em>HTML</em></li>
+                <li><span class="blueline css"></span><em>CSS</em></li>
+                <li><span class="blueline php"></span><em>React</em></li>
+                <li><span class="blueline javascript"></span><em>Javascript</em></li> 
+              
+              </ul>
+            </div>
+              <div class="col">
+              <h2 class="plataformas titulo">Platformlar</h2>
+              <ul class="skill">
+                <li><span class="greenline wordpress"></span><em>Wordpress</em></li>
+                <li><span class="greenline prestashop"></span><em>Unreal Engine</em></li>
+                <li><span class="greenline joomla"></span><em>Unity</em></li>
+               
+             
+              </ul>
+            </div>
+              <div class="col">
+              <h2 class="programas titulo">Programlar</h2>
+              <ul class="skill">
+                <li><span class="redline dreamweaver"></span><em>Canva</em></li>
+                <li><span class="redline photoshop"></span><em>Photoshop</em></li>
+                <li><span class="redline premiere"></span><em>Figma</em></li>
+                
+              </ul>
+            </div>
+          </div>
+          <!-- idea original en: http://www.alessioatzeni.com/blog/css3-skill-bar-animation/ -->
+
+   
+
+          <div class="projects" id="projects">
+              <h2 class="heading">Projects</h2>
+
+              <div class="projects-box">
+                  <div class="project-card">
+                      <img src="image.png" alt="">
+                      <h3>Project 1</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Dolores explicabo libero voluptates dignissimos saepe 
+                       velit aut quibusdam accusantium quos doloremque molestiae
+                       consequatur ea nam repellat quas quam quae, ut tempora.</p>
+                          <div class="btn">See Project</div>
+                      </div>
+                      <div class="project-card">
+                          <img src="image.png" alt="">
+                          <h3>Project 2 </h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                           Dolores explicabo libero voluptates dignissimos saepe 
+                           velit aut quibusdam accusantium quos doloremque molestiae
+                           consequatur ea nam repellat quas quam quae, ut tempora.</p>
+                              <div class="btn">See Project</div>
+                          </div>
+                          <div class="project-card">
+                              <img src="image.png" alt="">
+                              <h3>Project 3</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                               Dolores explicabo libero voluptates dignissimos saepe 
+                               velit aut quibusdam accusantium quos doloremque molestiae
+                               consequatur ea nam repellat quas quam quae, ut tempora.</p>
+                                  <div class="btn">See Project</div>
+                              </div>
+                             
+              </div>
+              <form  id="contact" action="https://api.web3forms.com/submit" method="POST">  
+      
+                <input type="hidden" name="access_key" value="dabb83e6-ebc2-4c35-9777-d384a53650c2">
+                
+                      <h1  class="contact-text" >Bana Ulaşın</h1>  
+                      <input name="name" type="text" class="feedback-input" placeholder="İsim" />   
+                      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                      <textarea name="text" class="feedback-input" placeholder="Konu"></textarea>
+                      <input type="submit" value="GÖNDER"/>
+                     
+                    </form>
+                 
+
+          <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="button.js"></script>
+    <script src="main.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/iconsHover.js"></script>
+  <script src="script.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
